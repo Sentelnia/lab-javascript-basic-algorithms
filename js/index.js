@@ -40,3 +40,18 @@ if ( hacker1 > hacker2) {
 } else {
   console.log("What?! You both have the same name?")
 };
+
+//bonus
+let lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo lorem non dolor bibendum varius. Maecenas ut risus quis purus varius vestibulum. Donec et odio ut quam efficitur tempor nec id mi. Pellentesque tempus, tellus at fermentum egestas, arcu nisl iaculis turpis, gravida commodo ipsum odio sed dolor. Fusce posuere non mi a placerat. Donec at lobortis metus. Aliquam mollis quis risus a rhoncus.
+
+Quisque in magna a lacus malesuada pretium. Vivamus tincidunt a mauris ut eleifend. Aenean et aliquet lorem, eu ullamcorper arcu. Quisque vestibulum sapien eros. In suscipit eros ut congue elementum. Maecenas sem orci, elementum id porttitor a, facilisis at ex. Cras id purus sed ipsum maximus commodo a in libero. Fusce sed tincidunt arcu. Nullam sollicitudin venenatis ipsum volutpat faucibus. Nullam sit amet ornare dui, nec commodo massa. Sed eget lacinia leo, vel convallis mi. Suspendisse ultricies quis dolor ac commodo.
+
+Integer commodo convallis faucibus. Nam sit amet interdum sem, a rhoncus justo. Nullam condimentum orci vitae dolor congue varius. Integer tempus dolor quis nibh imperdiet, at malesuada est ullamcorper. Nulla a auctor mi, nec consectetur nisl. Ut consequat placerat dui, quis mollis nisi blandit ornare. Maecenas at erat faucibus, dictum nulla ac, rhoncus quam. Fusce eu velit quis erat accumsan semper vel vel libero. In non euismod enim. Nulla sit amet erat leo. Vivamus mi elit, pulvinar ultricies eros at, dignissim tincidunt risus.`
+
+let count = 0
+for (let i = 0 ; i <= lorem.length ; i++) {
+  if (lorem[i] === " "){
+    count += 1;
+  } 
+}
+console.log(count);
