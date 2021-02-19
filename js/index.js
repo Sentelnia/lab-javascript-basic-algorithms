@@ -58,3 +58,12 @@ for (let i = 0 ; i <= lorem.length ; i++) {
 console.log(count);
 
 //Normalement on tombe bien sur 228
+
+//compte des Et .. Il doit y avoir plus simple XD , mais par ex avec includes , il e compte aussi les et contenu dans d'autres mots
+let countEt = 0
+for (let i = 0 ; i <= lorem.length ; i++) {
+  if (lorem[i-1] === " " && lorem[i] === "e" && lorem[i+1] === "t" && lorem[i + 2] === " ") {
+    countEt += 1;
+  }
+}
+console.log(countEt);
