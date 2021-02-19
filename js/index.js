@@ -67,3 +67,37 @@ for (let i = 0 ; i <= lorem.length ; i++) {
   }
 }
 console.log(countEt);
+
+//bonus2
+
+let phraseToCheck = "Was it a car or a cat I saw?";
+
+let aLendroit = '';
+let aLenvers = '';
+
+
+//met en minuscules
+phraseToCheckLow = phraseToCheck.toLowerCase();
+
+//créé une chaine à l'endroit uniquement avec les lettres
+for (let i = 0; i < phraseToCheck.length; i++) {
+  if (!(phraseToCheckLow[i] >= "a" && phraseToCheckLow[i] <= "z")){
+    continue;
+  }
+  aLendroit += phraseToCheckLow[i];
+}
+
+//créé une chaine à l'envers uniquement avec les lettres
+for (let i = phraseToCheck.length -1 ; i >= 0; i--) {
+  if (!(phraseToCheckLow[i] >= "a" && phraseToCheckLow[i] <= "z")){
+    continue;
+  }
+  aLenvers += phraseToCheckLow[i];
+}
+
+//compare les deux chaines
+if (aLendroit === aLenvers) {
+  console.log(`${phraseToCheck} est un Palindrome`)
+} else {
+  console.log (`${phraseToCheck} n'est pas un Palindrome`)
+}
