@@ -70,7 +70,7 @@ console.log(countEt);
 
 //bonus2
 
-let phraseToCheck = "Was it a car or a cat I saw?";
+let phraseToCheck = prompt("Écris une phrase ici.");
 
 let aLendroit = '';
 let aLenvers = '';
@@ -100,4 +100,4 @@ if (aLendroit === aLenvers) {
   console.log(`${phraseToCheck} est un Palindrome`)
 } else {
   console.log (`${phraseToCheck} n'est pas un Palindrome`)
-}
+} 
